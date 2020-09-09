@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="IE=edge">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sat, 01 Jan 2000 00:00:00 GMT">
+  <title>RingCentral Proxy demo with RingCentral Embeddable</title>
+  <meta name="description" content="RingCentral Proxy demo with RingCentral Embeddable">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
+  >
+</head>
+
+<body>
+  <h1>RingCentral Proxy demo with RingCentral Embeddable</h1>
+  <div>
+    <p>
+      In this page, RingCentral Embeddable is using RingCentral Proxy server "https://ringcentral-proxy.herokuapp.com/proxy".
+      RingCentral tokens are managed in server-side. RingCentral Embeddable uses cookie to verify user with RingCentral Proxy Server.
+    </p>
+    <p>
+      Get more about <a href="https://github.com/embbnux/ringcentral-proxy" target="_blank">RingCentral Proxy</a>
+    </p>
+  </div>
+  <script>
+    (function() {
+      var rcs = document.createElement("script");
+      rcs.src = "https://ringcentral.github.io/ringcentral-embeddable/adapter.js?appServer=https://ringcentral-proxy.herokuapp.com/proxy&authProxy=1";
+      var rcs0 = document.getElementsByTagName("script")[0];
+      rcs0.parentNode.insertBefore(rcs, rcs0);
+    })();
+  </script>
+</body>
+</html>
